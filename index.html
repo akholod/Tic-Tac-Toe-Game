@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-game-styles.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center text-uppercase">Tic Tac Toe Game</h1>
+    <div class="row">
+        <table class="table table-bordered">
+            <tr>
+                <td id="1" valueX="0" valueY="0" class="cell"></td>
+                <td id="2" valueX="1" valueY="0" class="cell"></td>
+                <td id="3" valueX="2" valueY="0" class="cell"></td>
+            </tr>
+            <tr>
+                <td id="4"  valueX="0" valueY="1" class="cell"></td>
+                <td id="5" valueX="1" valueY="1" class="cell"></td>
+                <td id="6" valueX="2" valueY="1"  class="cell"></td>
+            </tr>
+            <tr>
+                <td id="7"  valueX="0" valueY="2"  class="cell"></td>
+                <td id="8" valueX="1" valueY="2"  class="cell"></td>
+                <td id="9" valueX="2" valueY="2"  class="cell"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="startModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-uppercase">Tic tac toe game</h4>
+            </div>
+            <div class="modal-body text-uppercase">
+                Choose X or O
+            </div>
+            <div class="modal-footer text-center">
+                <button id="playerX" type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                <button id="playerO" type="button" class="btn btn-default" data-dismiss="modal">O</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/Board.js"></script>
+<script src="js/Player.js"></script>
+<script src="js/ComputerPlayer.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

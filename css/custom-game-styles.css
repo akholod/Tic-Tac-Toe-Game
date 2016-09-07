@@ -1,0 +1,30 @@
+body {
+    background-color: #345;
+    color: #fff;
+    font-size: 2.5rem;
+}
+ .table .cell{
+    border: 3px solid #be621b;
+}
+
+.container {
+    padding: 0 20%;
+}
+.cell {
+    cursor: pointer;
+}
+.cellY {
+    background: url("../img/playO.png") no-repeat;
+    background-size: cover;
+}
+.cellX {
+    background: url("../img/playX.png") no-repeat;
+    background-size: cover;
+}
+.modal-content {
+    background-color: #567;
+    text-align: center;
+}
+.modal-footer {
+    text-align: center;
+}
